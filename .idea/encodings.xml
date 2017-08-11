@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/beta2/ATMMachine2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/beta2/Account2.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/beta2/Transaction.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/beta3/ATMMachine3.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/beta3/ATMMain.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/beta3/ATMUI.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/beta3/NumberKeyboard.java" charset="GBK" />
+  </component>
+</project>
