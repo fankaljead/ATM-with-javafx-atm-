@@ -29,6 +29,7 @@ public class NumberKeyboard extends GridPane{//数字键盘
 	public void setControl(TextInputControl c){
 		this.control = c;
 	}
+	
 
 	//设置每个按键的形状
 	public void setButtonShape(Shape s){

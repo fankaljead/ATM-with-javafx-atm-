@@ -19,6 +19,8 @@ public class MenuButton{
     protected Button btLogin = new Button("登录");
     protected Button btRegister = new Button("注册");
 
+    protected Button btRegisterEnter = new Button("确定");
+    protected Button btRegisterBack = new Button("返回");
 
     protected VBox leftButtonVboxOut = new VBox();
     protected VBox rightButtonVboxOut = new VBox();
@@ -31,6 +33,7 @@ public class MenuButton{
     }
 
 
+    //设置每个按钮的长和高
     public void setButtonSize(double height, double width){
 
         this.btDrawMoney.setPrefSize(height, width);
@@ -45,11 +48,15 @@ public class MenuButton{
 
         this.btLogin.setPrefSize(height, width);
         this.btRegister.setPrefSize(height, width);
+        
+        this.btRegisterEnter.setPrefSize(height, width);
+        this.btRegisterBack.setPrefSize(height, width);
     }
 
+    //设置主界面的样式
     public void setMenuButton(){
 
-        this.leftButtonVbox.getChildren().clear();
+        this.leftButtonVbox.getChildren().clear();//清除之前的节点
         this.rightButtonVbox.getChildren().clear();
 
         this.leftButtonVbox.getChildren().addAll(btDrawMoney, btChangePswd, btBack, btExit);
@@ -60,15 +67,16 @@ public class MenuButton{
         this.leftButtonVbox.setPadding(new Insets(2,2,2,2));
         this.rightButtonVbox.setPadding(new Insets(2,2,2,2));
 
-        this.setButtonSize(100, 50);
+        this.setButtonSize(100, 50);//设置按钮大小为100 * 50
     }
 
+    //设置登录界面的样式
     public void setLoginMenu(){
 
-        this.leftButtonVbox.getChildren().clear();
+        this.leftButtonVbox.getChildren().clear();//清除之前的节点
         this.rightButtonVbox.getChildren().clear();
 
-        this.leftButtonVbox.getChildren().addAll(btLogin, btBack);
+        this.leftButtonVbox.getChildren().addAll(btLogin);
         this.rightButtonVbox.getChildren().addAll(btRegister, btExit);
 
         this.leftButtonVbox.setSpacing(80);
@@ -76,7 +84,28 @@ public class MenuButton{
         this.rightButtonVbox.setPadding(new Insets(80,2,80,2));
         this.rightButtonVbox.setSpacing(80);
 
-        this.setButtonSize(100, 50);
+        this.setButtonSize(100, 50);//设置按钮大小为100 * 50
     }
+    
+    public void setRegisterMenu() {    	
+		
+	    
+	    this.leftButtonVbox.getChildren().clear();
+	    this.rightButtonVbox.getChildren().remove(btRegister);
+	    
+	    this.leftButtonVbox.getChildren().add(btRegisterBack);
+	    this.rightButtonVbox.getChildren().add(btRegisterEnter);
+	    
+	    this.leftButtonVbox.setSpacing(80);
+        this.leftButtonVbox.setPadding(new Insets(80,2,80,2));
+        this.rightButtonVbox.setPadding(new Insets(80,2,80,2));
+        this.rightButtonVbox.setSpacing(80);
+
+        this.setButtonSize(100, 50);//设置按钮大小为100 * 50
+	}
+
+    public void setRegisterBack() {
+    	
+	}
 
 }

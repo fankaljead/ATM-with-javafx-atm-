@@ -287,10 +287,10 @@ public class ATMMachine2 {
                 e.printStackTrace();
             }
         }
-		public static void main(String[] args) throws Exception{
-
-
-		new ATMMachine2().start();
-
-	}
+//		public static void main(String[] args) throws Exception{
+//
+//
+//		new ATMMachine2().start();
+//
+//	}
 }
